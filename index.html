@@ -85,10 +85,11 @@
     }
     .summary, .message { color: var(--muted); line-height: 1.6; }
     .mini-grid {
-      display: grid;
-      gap: 12px;
-      margin-top: 24px;
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
     @media (min-width: 700px) { .mini-grid { grid-template-columns: 1fr 1fr; } }
     .mini-card, .card {
       background: var(--card);
